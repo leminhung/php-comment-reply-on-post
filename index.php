@@ -67,7 +67,7 @@
               <?php foreach ($replies as $reply) : ?>
               <!-- reply -->
               <div class="comment reply clearfix">
-                <img src="images/minhung.jpg" alt="" class="profile_pic">
+                <img src="images/cat.jpg" alt="" class="profile_pic">
                 <div class="comment-details">
                   <span class="comment-name"><?php echo getUsernameById($reply['user_id']) ?></span>
                   <span class="comment-date"><?php echo date("F j, Y ", strtotime($reply["created_at"])); ?></span>
@@ -75,13 +75,6 @@
                   <a class="reply-btn" href="#">reply</a>
                 </div>
               </div>
-              <!-- reply form -->
-              <form action="index.php" class="reply_form clearfix">
-                <div class="form-group">
-                  <textarea class="form-control" name="reply_text" id="reply_text" cols="30" rows="2"></textarea>
-                  <button class="btn btn-primary btn-xs pull-right">Submit reply</button>
-                </div>
-              </form>
               <?php endforeach ?>
               <?php endif ?>
             </div>
